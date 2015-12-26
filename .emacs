@@ -27,6 +27,11 @@
 'smart-compile-alist
 '("\\.toml\\'"   .   "cargo run"))
 
+(add-to-list
+'smart-compile-alist
+'("\\.py\\'"   .   "ipython %f"))
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
