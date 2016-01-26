@@ -7,7 +7,7 @@
   (package-initialize))
 
 ;; theme
-(load-theme 'gotham t)
+(load-theme 'zenburn t)
 
 
 ;; smart compile
