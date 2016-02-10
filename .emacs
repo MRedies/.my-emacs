@@ -7,7 +7,7 @@
   (package-initialize))
 
 ;; theme
-(load-theme 'zenburn t)
+(load-theme 'ample t)
 
 
 ;; smart compile
@@ -33,16 +33,8 @@
 
 
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  '(inhibit-startup-screen t))
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
  )
 
 ;; bracket matching
@@ -52,3 +44,10 @@
 (global-linum-mode 1) 
 
 (global-auto-revert-mode 1)
+
+
+;; tramp
+(require 'tramp)
+(setq tramp-default-method "ssh")
+;; (add-to-list 'tramp-remote-path "/opt/MPI/openmpi-1.6.5/linux/intel/bin")
+(add-to-list 'tramp-remote-path 'tramp-own-remote-path)
