@@ -45,9 +45,12 @@
 
 (global-auto-revert-mode 1)
 
-
+;; goto-line
+(global-set-key (kbd "M-g") 'goto-line)
 ;; tramp
 (require 'tramp)
 (setq tramp-default-method "ssh")
 ;; (add-to-list 'tramp-remote-path "/opt/MPI/openmpi-1.6.5/linux/intel/bin")
 (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
+(add-to-list 'tramp-remote-process-environment "OMP_NUM_THREADS=8")
+
