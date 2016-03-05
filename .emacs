@@ -54,3 +54,4 @@
 (add-to-list 'tramp-remote-path 'tramp-own-remote-path)
 (add-to-list 'tramp-remote-process-environment "OMP_NUM_THREADS=8")
 
+(setenv "LD_LIBRARY_PATH" "/usr/local/lib")
