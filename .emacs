@@ -31,7 +31,10 @@
 'smart-compile-alist
 '("\\.py\\'"   .   "ipython %f"))
 
-
+(add-to-list
+ 'smart-compile-alist
+ '("\\.hs\\'"  . "ghc %f && ./%n"))
+ 
 (custom-set-variables
  '(inhibit-startup-screen t))
 (custom-set-faces
